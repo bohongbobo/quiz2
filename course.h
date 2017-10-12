@@ -7,6 +7,10 @@
 		John Dolan	School of EECS		Summer 2013
 ************************************************************************/
 
+///@file course.h
+///@author John Dolan
+///@date 2013
+
 #include<iostream>
 #include<string>
 #ifndef COURSE_H

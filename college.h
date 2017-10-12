@@ -5,6 +5,9 @@
 //10/8/2015
 //********************
 
+///@file college.h
+///@author Matthew Aberegg
+///@date 10/8/2015
 #include <iostream>
 #include <fstream>
 #include <string>

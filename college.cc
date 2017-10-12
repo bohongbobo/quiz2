@@ -4,6 +4,11 @@
 //CS 2401
 //10/8/2015
 //********************
+
+/// @file college.cc
+/// @author Mattew Aberegg
+/// @date 10/8/2015
+
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -69,6 +74,10 @@ College& College::operator =(const College& other){
 	return * this;
 }
 
+/// @berif this function is about adding a course to the list
+/// 
+/// @param c course that need to be added
+/// @return return to the main function
 void College::add(course& c){
 	node * previous;
 	node * cursor;
@@ -107,6 +116,11 @@ void College::add(course& c){
 	}
 }
 
+///@brief this function is to remove a course from the list
+///
+///@param coursename name of course that easy to find and remove
+///@see get_course_number()
+///@return return to the main function
 void College::remove(std::string coursename){
 	node * previous;	
 	node * cursor;
@@ -144,7 +158,10 @@ void College::display(std::ostream& outs){
 	outs << "\n";
 }
 
-
+///@brief this function is to calculate how many hours students have
+///
+///@see get_hours()
+///@return number
 double College::hours(){
 	node * ptr;
 	ptr = head;
